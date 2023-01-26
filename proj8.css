@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    position: relative;
+}
+body .top {
+    position: fixed;
+    top: -350px;
+    left: -300px;
+    z-index: 0;
+    width: 960px;
+    height: 960px;
+}
+body .bottom {
+    position: fixed;
+    bottom: -500px;
+    right: -200px;
+    z-index: 0;
+    width: 960px;
+    height: 960px;
+}
+.container {
+    max-width: 350px;
+    position: absolute;
+    height: 375px;
+    z-index: 1;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.card .image {
+    width: 350px;
+    height: 140px;
+}
+.card .image img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.card .profil img {
+    border-radius: 50%;
+    position: absolute;
+    top: 86px;
+    right: 120px;
+    left: 120px;
+    border: 4px solid #fff;
+}
+.card .about1 .names {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 55px;
+}
+.card .about1 .names h2 {
+    font-size: 18px;
+    margin-right: 10px;
+}
+.card .about1 .names .age p {
+    color: hsl(0, 0%, 59%);
+}
+.card .about1 .city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.card .about1 .city p {
+    color: hsl(0, 0%, 59%);
+}
+.card .about2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 30px;
+    width: 350px;
+    border-top: 1px solid hsla(185, 75%, 39%,30%);
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.card .about2 .part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card .about2 .part h1 {
+    font-size: 20px;
+}
+.card .about2 .part p {
+    font-size: 10px;
+    color: hsl(0, 0%, 59%);
+    letter-spacing: 2px;
+}
+@media (max-width: 375px) {
+    body .top {
+        position: fixed;
+        top: -600px;
+        left: -700px;
+        z-index: 0;
+        width: 960px;
+        height: 960px;
+    }
+    body .bottom {
+        position: fixed;
+        bottom: -600px;
+        right: -700px;
+        z-index: 0;
+        width: 960px;
+        height: 960px;
+    }
+}
